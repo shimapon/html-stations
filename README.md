@@ -4,11 +4,11 @@ Railway では Git で自分が取り組んだ内容を記録するときに、�
 テストが通れば Station クリアとなります。
 クリア後、TechTrain の画面に戻り、クリアになっているかを確認してみてください。
 
-## 初期設定
+# 初期設定
 
 ### 必要なツール
 
-1. Node.js( 14.* ) [ 12.* ,  16.* では動作しません]
+1. Node.js v14.17.0以降（v16.0.0以降を推奨します。）
 2. Yarn
 
 上記 2 つをインストールする必要があります。
@@ -23,7 +23,7 @@ yarn install
 
 Station の問題は、TechTrain の画面で確認してください。
 
-### Mac における初期設定
+# Mac における初期設定
 
 Homebrew を使ってインストールすることを想定しています。
 
@@ -32,7 +32,7 @@ Homebrew を使ってインストールすることを想定しています。
 Terminal.app を開き、次のコマンドをコピーアンドペーストで実行してください。
 
 ```shell
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 すでにインストール済みの方は、この手順を飛ばしてください。
@@ -91,7 +91,7 @@ yarn -v
 
 ![スクリーンショット 2021-04-25 15 44 21](https://user-images.githubusercontent.com/16362021/115983603-28745480-a5dd-11eb-9636-bdf4d77ab796.png)
 
-### Windows における初期設定
+# Windows における初期設定
 
 Windows での初期設定を行うためには、キャラクターユーザーインターフェイス（CUI）の操作を行う必要があります。
 
@@ -190,7 +190,7 @@ scoop install git nodejs-lts yarn
 
 #### `html-stations`リポジトリのクローン
 
-"Use this template" から作成したリポジトリを作業するディレクトリにクローンしましょう。
+"Fork" から作成したリポジトリを作業するディレクトリにクローンしましょう。
 
 ```powershell
 git clone https://github.com/{ユーザー名}/html-stations.git
@@ -266,3 +266,18 @@ git push
 yarn install
 ```
 
+### GitHubアカウントでサインアップしたので、パスワードがないという方へ
+
+https://techbowl.co.jp/techtrain/resetpassword
+
+上記のURLより自分の登録したメールアドレスより、パスワードリセットを行うことで、パスワードを発行してください。
+
+メールアドレスがわからない場合は、ログイン後にユーザー情報の編集画面で確認してください。
+ログインしていれば、次のURLから確認できます。
+
+https://techbowl.co.jp/techtrain/mypage/profile
+
+### 2021/06/01 20:00以前に挑戦して、Station15で詰まっている方へ
+
+1. 問題文を修正しました
+2. テストケースの不具合に対しても対応したため、このテキストの上部にある「自分のリポジトリの状態を最新に更新」を試してみてください。
